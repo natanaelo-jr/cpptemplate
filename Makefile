@@ -21,6 +21,3 @@ $(EXECUTABLE): $(OBJECTS)
 
 $(OBJ)/%.o: $(SRC)/%.cpp
 	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) -c $< -o $@
-
-run:
-	./$(EXECUTABLE)
