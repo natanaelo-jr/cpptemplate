@@ -1,4 +1,4 @@
-# cpptemplate
+# CppTemplate
 A template for c++ projects that includes makefile and folder structure
 
 ## Using

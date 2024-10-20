@@ -16,8 +16,15 @@ EXECUTABLE := $(BIN)/template_executable #Colocar o nome do executável
 #REGRAS
 all: $(EXECUTABLE)
 
+
 $(EXECUTABLE): $(OBJECTS)
 	$(CXX) $(CXXFLAGS) -I$(INCLUDE) $^ -o $@s
 
 $(OBJ)/%.o: $(SRC)/%.cpp
 	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) -c $< -o $@
+
+run: $(EXECUTABLE)
+	./$(EXECUTABLE)
+
+clean:
+	rm -f $(OBJECTS) $(EXECUTABLE)
