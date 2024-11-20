@@ -18,7 +18,7 @@ all: $(EXECUTABLE)
 
 
 $(EXECUTABLE): $(OBJECTS)
-	$(CXX) $(CXXFLAGS) -I$(INCLUDE) $^ -o $@s
+	$(CXX) $(CXXFLAGS) -I$(INCLUDE) $^ -o $@
 
 $(OBJ)/%.o: $(SRC)/%.cpp
 	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) -c $< -o $@
